@@ -1,0 +1,820 @@
+   
+/* ==========================================================================
+	Google Font
+========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+   
+a,a:hover {
+  text-decoration:none;
+  font-weight: 400;
+}
+
+html,
+body {
+  color:#545454;
+  line-height:26px;
+  font-weight: 400;
+  font-size:15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   color: #2B2B2B;
+}
+ul {
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*--------------------------
+ 2. helper classes 
+ ----------------------------*/
+
+.section-title {
+    position:  relative;
+}
+
+.section-title:before {
+    position:  absolute;
+    top:29%;
+    left: 40%;
+    height:  100%;
+    width: 20%;
+    content:  "";
+    border-bottom: 1px solid #8E8E8E;
+}
+
+.section-title:after {
+    position:  absolute;
+    right: 48%;
+    height: 5%;
+    width: 3%;
+    content:  "";
+    border: 2px solid #EE4D45;
+    border-radius: 5px;
+}
+
+.section-title h2{
+  font-size:38px;
+  text-transform:  uppercase;
+  font-weight:700;
+}
+.primary-overlay {
+    position:  relative;
+    z-index: 1;
+}
+
+.primary-overlay:after {
+    position:  absolute;
+    top:  0;
+    left: 0;
+    height:  100%;
+    width:  100%;
+    content:  "";
+    background: #F5F4F2;
+    opacity:  0.5;
+    z-index:  -1;
+}
+
+.overlay {
+    position:  relative;
+    z-index: 1;
+}
+
+.overlay:after {
+    position:  absolute;
+    top:  0;
+    left: 0;
+    height:  77.4%;
+    width:  100%;
+    content:  "";
+    background: #EE4D45;
+    opacity:  0.7;
+    z-index:  -1;
+}
+
+
+/*--------------------------
+ 3. header area 
+ ----------------------------*/
+#mainNav {
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	background: #fff;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EAEAE9;
+}
+
+.nav-list{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-list li.current>a{
+  color:#EE4D45 !important;
+}
+
+.nav-list li:not(.logo)>a{
+  display:block;
+  font-weight:400;
+  color: #666666;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  padding: 0px 20px;
+  font-weight:500;
+}
+
+li.logo {
+    margin: 0px 40px;
+}
+
+.toggle-menu{
+  display:none;
+}
+
+.mobile-display{
+  display:none;
+}
+
+/*--------------------------
+ 4. banner area
+ ----------------------------*/
+
+.header-promo {
+  background: #FF0147;
+  padding-top: 90px;
+  border-bottom: 1px solid #EAEAE9;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.promo-img{
+	margin-top: 40px;
+	float: right;
+}
+
+.promo-info {
+    padding-top: 120px;
+}
+.promo-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.promo-info h1 {
+  font-size: 63px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+.promo-info p {
+  margin-top: 20px; 
+  font-size: 15px;
+  color: #545454;
+  line-height: 26px;
+  text-align: justify;
+}
+
+/*--------------------------
+ 5. about area 
+ ----------------------------*/
+
+.about-area {
+  padding-top:100px;
+  margin-bottom: 80px;
+}
+.personal-info-area {
+  margin-top:80px;
+}
+.personal-details-top h3 {
+    font-size: 23px;
+    font-weight:700;
+}
+.personal-details-top p {
+    margin-top: 40px;
+    line-height: 28px;
+    font-size: 15px;
+    color: #545454;
+}
+.personal-info {
+    overflow: hidden;
+}
+.personal-info-right {
+    width: 50%;
+    float: right;
+}
+
+.personal-info-left {
+    width: 50%;
+    float: left;
+}
+.personal-info ul>li.info-style {
+    position:  relative;
+}
+
+.personal-info ul>li.info-style:before {
+    position:  absolute;
+    top: 8px;
+    left: 0;
+    height: 10px;
+    width:  10px;
+    content: "";
+    background: #EE4D45;
+}
+
+.personal-info h4 {
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+  font-weight:600;
+}
+
+.social-medias {
+    margin-top:  35px;
+}
+.social-medias ul>li {
+    float:  left;
+}
+
+.social-medias ul>li>a>i {
+    font-size: 16px;
+    border: 1px solid #EE4D45;
+    border-radius:  50%;
+    height:  35px;
+    width: 35px;
+    padding-left: 10px;
+    padding-top: 9px;
+    margin-right: 10px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	color: #2B2B2B;
+}
+
+.social-medias ul>li>a>i:hover{
+  background: #EE4D45;
+  color: #fff;
+}
+
+.social-medias ul>li>a>i.fa-facebook{
+  padding-left:12px;
+}
+ 
+.personal-details-top p {
+    margin-top: 40px;
+    line-height: 28px;
+    font-size: 15px;
+    color: #545454;
+}
+
+/*--------------------------
+ 6. skill progress area 
+ ----------------------------*/
+.skill-progress {
+    margin-top: 45px;
+}
+
+.skill-area h3 {
+    font-size: 23px;
+    font-weight:700;
+}
+
+.single-skill h4 {
+    text-transform:  uppercase;
+    font-size: 16px;
+}
+
+.percentCount {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+	color: #2B2B2B;
+	margin-top: -11%;
+	font-size: 16px;
+}
+
+.progressbar {
+    margin-top: 30px;
+} 
+.feature-items {
+    margin-top: 50px;
+}
+.single-feature h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.single-feature p {
+    margin-left: 70px;
+    margin-top: -15px;
+    width: 76%;
+}
+.single-feature h4>img {
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.single-feature {
+  margin-bottom: 40px;
+}
+ .features-ex {
+   margin-top:60px;
+ }
+
+ /*--------------------------
+ 7. portfolio area 
+ ----------------------------*/
+
+.portfolio-area {
+  padding:100px 0px;
+}
+
+.portfolio-nav{
+  margin-top: 30px;
+  margin-left: 12.5%;
+}
+ 
+.portfolio-nav ul li {
+    float:  left;
+    cursor:  pointer;
+    margin-left: 25px;
+    color:  #666666;
+  font-size:16px;
+    -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-nav ul li.active-portfolio {
+  color: #EE4D45;
+}
+
+.portfolio-nav ul li:hover {
+  color: #EE4D45;
+} 
+
+.all-portfolios {
+    margin-top: 40px;
+}
+
+.single-portfolio {
+    margin-top: 40px;
+}
+
+.portfolio-content {
+    position:  relative;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.portfolio-detail {
+    position:  absolute;
+    bottom: 75px;
+    left: 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.portfolio-detail p {
+    font-size: 12px;
+  color:#666666;
+}
+
+.portfolio-detail p>i.fa-eye {
+    margin-left: 10px;
+}
+.portfolio-detail p>i {
+    margin-right: 5px;
+}
+
+.portfolio-icon{
+  position:  absolute;
+  right:  5%;
+  bottom: 15%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.portfolio-icon a {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 55px -10px #2B2B2B;
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.portfolio-icon i {
+    position: absolute;
+    top: 12px;
+    right: 11px;
+  font-size: 17px;
+  color: #2B2B2B;
+}
+
+.portfolio-title {margin-top: 30px;}
+
+.portfolio-title h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.portfolio-title h6 {
+    color: #A2A0A0;
+    font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.portfolio-hover{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  opacity:0;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.portfolio-hover-inner{
+  position:absolute;
+  top:32%;
+  left:45%;
+}
+
+.portfolio-hover-inner i {
+    color: #2B2B2B;
+    font-size: 25px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.portfolio-content:hover .portfolio-hover{
+  opacity: 1;
+}
+
+.portfolio-content:hover .portfolio-detail{
+  display: none;
+}
+
+.portfolio-content:hover .portfolio-icon{
+  display: none;
+}
+
+.portfolio-item img {
+  width:100%;
+  height:100%;
+}
+
+
+ /*--------------------------
+ 8. service area 
+ ----------------------------*/
+
+.service-area {
+  padding:100px 0px;
+}
+
+.all-services {
+    margin-top: 50px;
+}
+
+.single-service {
+    margin-top: 30px;
+    padding: 20px;
+  box-shadow: 1px 5px 8px #CFCFCF;
+  cursor:pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.single-service i {
+  font-size: 43px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.single-service h3 {
+    font-size:  22px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  font-weight: 600;
+  line-height: 50px;
+} 
+.single-service p {
+   font-size: 14px;
+	line-height: 26px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.single-service:hover.single-service i{
+  color: #EE4D45;
+}
+.active-service i{
+  color: #EE4D45;
+}
+
+.single-service:hover.single-service h3 {
+  color: #EE4D45;
+}
+.active-service h3 {
+  color: #EE4D45;
+}
+
+ /*--------------------------
+ 9. contact area 
+ ----------------------------*/
+.contact-area {
+    background:  #F5F4F2;
+    padding: 30px 0px;
+}
+
+.contact-col-2 {
+    margin-left: 20%;
+}
+
+.contact-inner h4 {
+    font-size: 15px;
+    text-transform:  uppercase;
+	margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.contact-col-4 h4 {
+    text-align: left;
+}
+
+.contact-inner p {
+  color: #898888;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.social-contacts ul>li {
+    float:  left;
+    margin-right: 15px;
+}
+
+.social-contacts {
+    margin-top: 18px;
+}
+
+.social-contacts ul>li>a>i {
+    color: #898888;
+}
+
+.contact-inner h5 {
+    font-size: 13px;
+    color: #898888;
+    font-weight:  600;
+	margin-top: -3px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contact-col-4 {
+    text-align:  center;
+}
+
+.contact-col-1 p {
+    font-weight: 400;
+}
+
+.contact-col-4 p {
+    color: #A2A0A0;
+    font-weight: 400;
+	font-size: 13px;
+}
+
+.contact-inner input {
+    width: 100%;
+    border: none;
+}
+
+.contact-inner input[type=email] {
+    background:  none;
+    border-top: 1px solid #E1E1E1;
+}
+
+.contact-inner input[type=submit] {
+    background: #EE4D45;
+    text-align:  center;
+    text-transform:  uppercase;
+    color: #fff;
+    padding: 5px 0px;
+	font-weight:700;
+	font-family: 'Open Sans', sans-serif;
+} 
+
+
+/*--------------------------
+ 10. footer area 
+ ----------------------------*/
+
+.footer-area {
+    padding: 20px 0px;
+    border-top: 1px solid #E1E1E1;
+    background:  #F5F4F2;
+}
+
+.copyright p {
+    color: #898888;
+  font-size:13px;
+  margin-bottom: 0px;
+  font-weight:600;
+}
+
+#nav-bottom {
+    float: right;
+}
+
+.footer-menu ul>li {
+    float: left;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.footer-menu ul>li>a {
+    color: #898888;
+    font-weight:600;
+}
+
+/*--------------------------
+ 11. preloader CSS 
+ ----------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999;
+    width: 100%;
+    height: auto;
+}
+
+#status {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(images/1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+
+
+/*--------------------------
+ 12. back to top CSS
+ ----------------------------*/
+#backtotop.visible {
+    opacity: 0.5;
+    visibility: visible;
+    transition: 0.2s;
+}
+
+#backtotop {
+    background-color: #EE4D45;
+    color: #ffffff;
+	border-radius: 50%;
+}
+
+#backtotop {
+  bottom: 10px;
+  display: inline-block;
+  font-size: 20px;
+  height: 36px;
+  line-height: 36px;
+  opacity: 0.1;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  visibility: hidden;
+  width: 36px;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+#backtotop:hover {
+    opacity: 1;
+}
+
+
+
+/* Mobile Phones */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.mobile-display{
+	display:block;
+	margin:0 auto;
+}
+.logo{
+	display:none;
+}
+
+.toggle-menu{
+	display:block;
+	max-width:-webkit-min-content;
+	max-width:-moz-min-content;
+	max-width:-o-min-content;
+	max-width:min-content;
+	margin:1rem auto;
+	background:#2B2B2B;
+	color:#fff !important;
+	text-align:center;
+	padding:1rem;
+	border-radius:.25em;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.toggle-menu:hover{
+	background:#EE4D45;
+}
+.nav-list{
+	display:block;
+	width:100%;
+	position:static;
+	z-index:1012;
+	left:0;
+	top:0;
+	background:#2B2B2B;
+	text-align:center;
+	max-height:0;
+	overflow:hidden;
+}
+.activeNav{
+	max-height:100%; 
+	overflow:auto;
+}
+.nav-list li{
+	margin-left:0;
+}
+.nav-list li:not(.logo)>a{
+	color:#EE4D45;
+	line-height:40px;
+}
+.nav-list li:not(.logo)>a:hover{
+	color: #fff !important;
+	background:#EE4D45;
+	
+}
+}
