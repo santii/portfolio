@@ -343,6 +343,7 @@ li.logo {
     margin-left: 70px;
     margin-top: -15px;
     width: 76%;
+    text-align: justify;
 }
 .single-feature h4>img {
   margin-right: 30px;
@@ -356,167 +357,7 @@ li.logo {
  }
 
  /*--------------------------
- 7. portfolio area 
- ----------------------------*/
-/*
-.portfolio-area {
-  padding:100px 0px;
-}
-
-.portfolio-nav{
-  margin-top: 30px;
-  margin-left: 12.5%;
-}
- 
-.portfolio-nav ul li {
-    float:  left;
-    cursor:  pointer;
-    margin-left: 25px;
-    color:  #666666;
-  font-size:16px;
-    -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.portfolio-nav ul li.active-portfolio {
-  color: #EE4D45;
-}
-
-.portfolio-nav ul li:hover {
-  color: #EE4D45;
-} 
-
-.all-portfolios {
-    margin-top: 40px;
-}
-
-.single-portfolio {
-    margin-top: 40px;
-}
-
-.portfolio-content {
-    position:  relative;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.portfolio-detail {
-    position:  absolute;
-    bottom: 75px;
-    left: 15px;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.portfolio-detail p {
-    font-size: 12px;
-  color:#666666;
-}
-
-.portfolio-detail p>i.fa-eye {
-    margin-left: 10px;
-}
-.portfolio-detail p>i {
-    margin-right: 5px;
-}
-
-.portfolio-icon{
-  position:  absolute;
-  right:  5%;
-  bottom: 15%;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.portfolio-icon a {
-    background: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 55px -10px #2B2B2B;
-    display: block;
-    height: 40px;
-    width: 40px;
-}
-
-.portfolio-icon i {
-    position: absolute;
-    top: 12px;
-    right: 11px;
-  font-size: 17px;
-  color: #2B2B2B;
-}
-
-.portfolio-title {margin-top: 30px;}
-
-.portfolio-title h4 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.portfolio-title h6 {
-    color: #A2A0A0;
-    font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-}
-
-.portfolio-hover{
-  position:absolute;
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  opacity:0;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.portfolio-hover-inner{
-  position:absolute;
-  top:32%;
-  left:45%;
-}
-
-.portfolio-hover-inner i {
-    color: #2B2B2B;
-    font-size: 25px;
-    background: #fff;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.portfolio-content:hover .portfolio-hover{
-  opacity: 1;
-}
-
-.portfolio-content:hover .portfolio-detail{
-  display: none;
-}
-
-.portfolio-content:hover .portfolio-icon{
-  display: none;
-}
-
-.portfolio-item img {
-  width:100%;
-  height:100%;
-}
-*/
-
- /*--------------------------
- 8. service area 
+ 7. service area 
  ----------------------------*/
 
 .service-area {
@@ -577,7 +418,7 @@ li.logo {
 }
 
  /*--------------------------
- 9. contact area 
+ 8. contact area 
  ----------------------------*/
 .contact-area {
     background:  #F5F4F2;
@@ -662,7 +503,7 @@ li.logo {
 
 
 /*--------------------------
- 10. footer area 
+ 9. footer area 
  ----------------------------*/
 
 .footer-area {
@@ -694,7 +535,7 @@ li.logo {
 }
 
 /*--------------------------
- 11. preloader CSS 
+ 10. preloader CSS 
  ----------------------------*/
 
 #preloader {
@@ -724,7 +565,7 @@ li.logo {
 
 
 /*--------------------------
- 12. back to top CSS
+ 11. back to top CSS
  ----------------------------*/
 #backtotop.visible {
     opacity: 0.5;
